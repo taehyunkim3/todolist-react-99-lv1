@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 function App() {
   const [todos, setTodos] = useState([
-    { id: 'testid', title: '', body: '', isDone: false }
+    { id: 'testid', title: '테스트 제목', body: '테스트 입력내용', isDone: false }
   ]);
 
   const onChangeHandler = useCallback(
