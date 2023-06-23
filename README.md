@@ -16,6 +16,8 @@ _15기 김태현_
     - DoneItems.js
     - WorkingItems.js
 
+---
+
 ## 사용 함수
 
 - App.js
@@ -35,3 +37,9 @@ _15기 김태현_
   - onChangeBody : 사용자가 body(=content)값을 입력(변경될때로 감지) body state에 임시로 저장해줌.
 
   - onSubmit : 사용자가 form을 submit하면 실행됨. 임시 저장되었던 body, title state를 불러와서 data에 담아서 부모인 app.js의 onSubmitHandler로 보내줌. 그후 title, body state 초기화. (e.prevent.default로 기본 기능인 새로고침을 막아둠)
+
+---
+
+##개선 필요 사항
+
+- Done, Working 으로 컴포넌트 분리 -> isDone의 상태로 버튼 모양 랜더링을 바꿔주고, 컴포넌트는 하나로 통일하는게 좋아보임.
