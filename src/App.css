@@ -10,7 +10,7 @@
   width: 100%;
   max-width: 1200px;
   min-width: 800px;
-  background-color: antiquewhite;
+  background-color: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
