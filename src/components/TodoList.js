@@ -15,7 +15,7 @@ const TodoList = ({ todos, onChangeHandler, onDeleteHandler }) => {
                     <WorkingItems todo={todo} key={todo.id} onChangeHandler={onChangeHandler} onDeleteHandler={onDeleteHandler}></WorkingItems>
                 ))}
             </div>
-            <h2>DONE...!</h2>
+            <h2 className="done-title">DONE...!</h2>
             <div className='todolist-frame--inner'>
 
                 {todos.filter(a => a.isDone === true).map(todo => <DoneItems todo={todo} key={todo.id} onChangeHandler={onChangeHandler} onDeleteHandler={onDeleteHandler}></DoneItems>)}

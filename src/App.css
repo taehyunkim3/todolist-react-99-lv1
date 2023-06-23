@@ -1,3 +1,9 @@
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  box-sizing: border-box;
+  transition: all 0.05s;
+}
+
 .frame {
   width: 100%;
   display: flex;
@@ -6,6 +12,14 @@
   align-items: center;
 }
 
+h2 {
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+h4 {
+  margin-bottom: 5px;
+  margin-top: 0;
+}
 .App {
   width: 100%;
   max-width: 1200px;
@@ -79,22 +93,31 @@ form > button {
   flex-wrap: wrap;
 }
 
+.done-title {
+  margin-top: 30px;
+}
+
 article {
   border: 3px solid gray;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 300px;
   height: 150px;
-  padding: 20px;
+  padding: 10px;
   margin: 10px;
+  overflow: hidden;
 
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-start;
+  position: relative;
 }
 
 article > div {
+  position: absolute;
   align-self: center;
+  justify-self: flex-end;
+  bottom: 15px;
 }
 
 article > div > button {
