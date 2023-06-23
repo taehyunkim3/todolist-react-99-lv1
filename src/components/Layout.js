@@ -8,13 +8,13 @@ const Layout = ({ todos, onChangeHandler, onSubmitHandler, onDeleteHandler }) =>
 
 
 
-    const onChangeTitle = useCallback(e => {
+    const onChangeTitle = (e) => {
         setTitle(e.target.value);
-    }, [])
+    };
 
-    const onChangeBody = useCallback(e => {
+    const onChangeBody = (e) => {
         setBody(e.target.value);
-    }, [])
+    };
 
     const onSubmit = (e) => {
         const data = {
