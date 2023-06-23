@@ -4,5 +4,10 @@
 
 김태현
 
-#컴포넌트 트리
-App.js 하위 > Layout.js > -TodoList.js, -DoneItems.js, -WorkingItems.js
+## 컴포넌트 트리
+
+- App.js
+  - Layout.js
+    - TodoList.js
+    - DoneItems.js
+    - WorkingItems.js
