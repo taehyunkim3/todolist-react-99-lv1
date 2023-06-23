@@ -2,10 +2,11 @@
 import { useCallback, useRef, useState } from 'react';
 import './App.css';
 import Layout from './components/Layout';
+import { v4 as uuidv4 } from 'uuid';
 
 function App() {
   const [todos, setTodos] = useState([
-    { id: 0, title: '', body: '', isDone: false }
+    { id: 'testid', title: '', body: '', isDone: false }
   ]);
 
   const onChangeHandler = useCallback(
@@ -16,17 +17,15 @@ function App() {
     }, [todos]
   )
 
-  const nextId = useRef(1);
   const onSubmitHandler = useCallback(
     data => {
       const todo = {
-        id: nextId.current,
+        id: uuidv4(),
         title: data.title,
         body: data.body,
         isDone: false
       }
       setTodos(todos.concat(todo));
-      nextId.current += 1;
     }, [todos]
   )
 
