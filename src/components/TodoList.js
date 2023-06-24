@@ -1,6 +1,5 @@
 
-import WorkingItems from "./WorkingItems";
-import DoneItems from "./DoneItems";
+import TodoListItems from "./TodoListItems";
 const TodoList = ({ todos, onChangeHandler, onDeleteHandler }) => {
 
 
@@ -11,14 +10,19 @@ const TodoList = ({ todos, onChangeHandler, onDeleteHandler }) => {
             <h2>WORKING...</h2>
             <div className='todolist-frame--inner'>
 
-                {todos.filter(a => a.isDone !== true).map(todo => (
-                    <WorkingItems todo={todo} key={todo.id} onChangeHandler={onChangeHandler} onDeleteHandler={onDeleteHandler}></WorkingItems>
-                ))}
+                {todos.map((todo) => {
+                    return todo.isDone
+                        ? null
+                        : <TodoListItems todo={todo} key={todo.id} onChangeHandler={onChangeHandler} onDeleteHandler={onDeleteHandler}></TodoListItems>;
+                })}
             </div>
             <h2 className="done-title">DONE...!</h2>
             <div className='todolist-frame--inner'>
-
-                {todos.filter(a => a.isDone === true).map(todo => <DoneItems todo={todo} key={todo.id} onChangeHandler={onChangeHandler} onDeleteHandler={onDeleteHandler}></DoneItems>)}
+                {todos.map((todo) => {
+                    return todo.isDone
+                        ? <TodoListItems todo={todo} key={todo.id} onChangeHandler={onChangeHandler} onDeleteHandler={onDeleteHandler}></TodoListItems>
+                        : null;
+                })}
             </div>
 
         </section>
