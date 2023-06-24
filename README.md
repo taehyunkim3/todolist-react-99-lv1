@@ -13,9 +13,9 @@ _15기 김태현_
 - App.js
   - Layout.js
     - TodoList.js
-    - [추가]TodoListItems.js
-    - [삭제]DoneItems.js
-    - [삭제]WorkingItems.js
+    - __TodoListItems.j₩s__
+    - ~~DoneItems.js~~
+    - ~~WorkingItems.js~~ 
 
 ---
 
