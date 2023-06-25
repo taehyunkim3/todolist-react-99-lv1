@@ -85,14 +85,14 @@ form > button {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 .todolist-frame--inner {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 .done-title {
