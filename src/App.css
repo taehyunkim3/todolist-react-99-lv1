@@ -91,6 +91,7 @@ form > button {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  overflow-y: scroll;
 }
 
 .done-title {
