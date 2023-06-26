@@ -6,16 +6,16 @@
 
 _15기 김태현_
 
----
+<img src="./image_readme.png"/>
 
 ## 컴포넌트 트리
 
 - App.js
   - Layout.js
     - TodoList.js
-    - __TodoListItems.js__
+    - **TodoListItems.js**
     - ~~DoneItems.js~~
-    - ~~WorkingItems.js~~ 
+    - ~~WorkingItems.js~~
 
 ---
 
