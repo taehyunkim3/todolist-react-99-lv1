@@ -14,6 +14,7 @@ _15기 김태현_
   - Layout.js
     - TodoList.js
     - **TodoListItems.js**
+    - **TodoInput.js**
     - ~~DoneItems.js~~
     - ~~WorkingItems.js~~
 
@@ -38,6 +39,12 @@ _15기 김태현_
   - onChangeBody : 사용자가 body(=content)값을 입력(변경될때로 감지) body state에 임시로 저장해줌.
 
   - onSubmit : 사용자가 form을 submit하면 실행됨. 임시 저장되었던 body, title state를 불러와서 data에 담아서 부모인 app.js의 onSubmitHandler로 보내줌. 그후 title, body state 초기화. (e.prevent.default로 기본 기능인 새로고침을 막아둠)
+
+---
+
+### 수정사항
+
+- useCallback이용한 최적화, input컴포넌트 분리, React.memo 최적화, 빈 입력값 필터링
 
 ---
 
