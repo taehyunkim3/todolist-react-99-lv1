@@ -1,4 +1,4 @@
-
+import React from "react";
 
 const TodoListItems = ({ todo, key, onChangeHandler, onDeleteHandler }) => {
 
@@ -16,4 +16,4 @@ const TodoListItems = ({ todo, key, onChangeHandler, onDeleteHandler }) => {
     )
 }
 
-export default TodoListItems;
+export default React.memo(TodoListItems);

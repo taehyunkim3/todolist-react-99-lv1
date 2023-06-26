@@ -11,10 +11,9 @@ function App() {
 
   const onChangeHandler = useCallback(
     id => {
-      setTodos(
-        todos.map(todo => todo.id === id ? { ...todo, isDone: !todo.isDone } : todo,)
+      setTodos(prev => prev.map(todo => todo.id === id ? { ...todo, isDone: !todo.isDone } : todo,)
       )
-    }, [todos]
+    }, []
   )
 
   const onSubmitHandler = useCallback(
@@ -25,16 +24,16 @@ function App() {
         body: data.body,
         isDone: false
       }
-      setTodos(todos.concat(todo));
-    }, [todos]
+        ; setTodos(prev => prev.concat(todo));
+    }, []
   )
 
 
 
   const onDeleteHandler = useCallback(
     id => {
-      setTodos(todos.filter(todo => todo.id !== id));
-    }, [todos]
+      setTodos(prev => prev.filter(todo => todo.id !== id));
+    }, []
   )
 
 
