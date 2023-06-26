@@ -26,7 +26,7 @@ const TodoInput = ({ onSubmitHandler }) => {
         const data = {
             title, body
         }
-        !title || body ? alert('내용을 입력하세요') : onSubmitHandler(data);
+        !title || !body ? alert('내용을 입력하세요') : onSubmitHandler(data);
         setTitle('');
         setBody('');
         e.preventDefault();
